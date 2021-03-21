@@ -1,4 +1,4 @@
-//const linedOut = document.querySelector('#arguments li[0]');
+////Part 1////
 
 function firstOne () {
     const linedOut = document.querySelector('#arguments li');
@@ -30,5 +30,42 @@ removeLast();
 
  fontChanger('150px', 'heading');
 
+////Part 2////
+
+
+function addToArgument(domElement) {
+      const argsUl = document.querySelector('#arguments');
+      argsUl.appendChild(domElement);      
+  }
+
+const newElement = document.createElement('li');
+      newElement.innerText = 'I am new';
+  
+addToArgument(newElement);
+
+
+const ulPic = document.createElement('img');
+      ulPic.src = "https://buffy.mlpforums.com/monthly_2017_03/blog-0471137001458138057.jpg.3a633758a132b0b7537ad318e643e84b.jpg";
+
+addToArgument(ulPic);
+
+function makeThirty(height1, id) {
+    const newSize = document.getElementById(id);
+    newSize.style.height = height1;
+}
  
+makeThirty('30px', 'image-1');  
+
+function sayBye(invisible, id) {
+    const goAway = document.getElementById(id);
+    goAway.style.visibility = 'hidden';
+}
+
+sayBye('hidden', 'image-3');
+
+////Part 3////
+
+
+
+
 
