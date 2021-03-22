@@ -65,7 +65,21 @@ sayBye('hidden', 'image-3');
 
 ////Part 3////
 
+function makeListItem(text) {
+    const listItem = document.createElement('li');
+    listItem.innerText = text;
+    return listItem;
+}
 
+const newListItem = makeListItem('This is a new li');
+addToArgument(newListItem);
 
+function makeHeader(size, text) {
+    const header = document.createElement(`h${size}`);
+    header.innerText = text;
+    return header;
+}
 
+const newHeader = makeHeader(2, 'new Header');
+addToArgument(newHeader);
 
